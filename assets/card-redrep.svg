@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220" role="img" aria-label="Redrep: a free, account-free workout tracker for iPhone. Every session gets a Redline score.">
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .m { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  </style>
+  <rect x="1" y="1" width="598" height="218" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+  <text x="28" y="54" font-size="28" font-weight="700" fill="#e6edf3">Redrep</text>
+  <text x="28" y="88" font-size="15" fill="#9198a1">Free, account-free workout tracker</text>
+  <text x="28" y="110" font-size="15" fill="#9198a1">for iPhone. Every session gets a</text>
+  <text x="28" y="132" font-size="15" fill="#9198a1">Redline score from 0 to 100.</text>
+  <text class="m" x="28" y="190" font-size="12" fill="#6e7681" letter-spacing="1">JAVASCRIPT · SWIFT · ON-DEVICE</text>
+
+  <path d="M390,160 A80,80 0 0 1 550,160" fill="none" stroke="#21262d" stroke-width="16" stroke-linecap="round"/>
+  <path d="M390,160 A80,80 0 0 1 550,160" pathLength="1" fill="none" stroke="#ff4d2e" stroke-width="16" stroke-linecap="round" stroke-dasharray="0.86 2" stroke-dashoffset="0.9">
+    <animate attributeName="stroke-dashoffset" values="0.9;0;0;0.9" keyTimes="0;0.25;0.9;1" dur="7s" repeatCount="indefinite" calcMode="spline" keySplines="0.2 0.8 0.2 1;0 0 1 1;0.4 0 1 1"/>
+  </path>
+  <text x="470" y="152" font-size="46" font-weight="700" fill="#e6edf3" text-anchor="middle">86</text>
+  <text class="m" x="470" y="186" font-size="13" fill="#ff7a59" text-anchor="middle" letter-spacing="3">TOUGH</text>
+</svg>

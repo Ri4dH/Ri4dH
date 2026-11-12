@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220" role="img" aria-label="World Cup Predictor: explainable 2026 match forecasts from a seven-model ensemble on live tournament data.">
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .m { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+  </style>
+  <rect x="1" y="1" width="598" height="218" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+  <text x="28" y="54" font-size="28" font-weight="700" fill="#e6edf3">World Cup Predictor</text>
+  <text x="28" y="88" font-size="15" fill="#9198a1">Explainable 2026 match forecasts</text>
+  <text x="28" y="110" font-size="15" fill="#9198a1">from a seven-model ensemble,</text>
+  <text x="28" y="132" font-size="15" fill="#9198a1">fed by live tournament data.</text>
+  <text class="m" x="28" y="190" font-size="12" fill="#6e7681" letter-spacing="1">NEXT.JS · TYPESCRIPT · POSTGRES</text>
+
+  <g class="m" font-size="11" fill="#9198a1" letter-spacing="1">
+    <text x="368" y="92">WIN</text>
+    <text x="368" y="124">DRAW</text>
+    <text x="368" y="156">LOSS</text>
+  </g>
+  <g fill="#21262d">
+    <rect x="416" y="80" width="156" height="14" rx="7"/>
+    <rect x="416" y="112" width="156" height="14" rx="7"/>
+    <rect x="416" y="144" width="156" height="14" rx="7"/>
+  </g>
+  <rect x="416" y="80" height="14" rx="7" fill="#3fb950" width="84">
+    <animate attributeName="width" values="84;84;36;36;112;112;84" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="12s" repeatCount="indefinite" calcMode="spline" keySplines="0 0 1 1;0.3 0 0.2 1;0 0 1 1;0.3 0 0.2 1;0 0 1 1;0.3 0 0.2 1"/>
+  </rect>
+  <rect x="416" y="112" height="14" rx="7" fill="#d29922" width="42">
+    <animate attributeName="width" values="42;42;48;48;28;28;42" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="12s" repeatCount="indefinite" calcMode="spline" keySplines="0 0 1 1;0.3 0 0.2 1;0 0 1 1;0.3 0 0.2 1;0 0 1 1;0.3 0 0.2 1"/>
+  </rect>
+  <rect x="416" y="144" height="14" rx="7" fill="#f85149" width="30">
+    <animate attributeName="width" values="30;30;72;72;16;16;30" keyTimes="0;0.25;0.33;0.58;0.66;0.92;1" dur="12s" repeatCount="indefinite" calcMode="spline" keySplines="0 0 1 1;0.3 0 0.2 1;0 0 1 1;0.3 0 0.2 1;0 0 1 1;0.3 0 0.2 1"/>
+  </rect>
+  <text class="m" x="368" y="52" font-size="11" fill="#6e7681" letter-spacing="1">ENSEMBLE OF 7</text>
+</svg>

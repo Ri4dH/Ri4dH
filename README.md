@@ -1,10 +1,42 @@
-# 💫 About Me:
-🔭 I’m currently working on full-stack web development projects and computer science coursework<br>👯 I’m looking to collaborate on open-source projects and interesting software ideas<br>🤝 I’m looking for help with system design, scalability, and advanced backend concepts<br>🌱 I’m currently learning operating systems, cloud technologies, and modern web frameworks<br>💬 Ask me about web development, programming fundamentals, and Docker<br>⚡ Fun fact: I can speak four languages<br>
+<img src="assets/hero.svg" width="100%" alt="A 3D printer nozzle traces the letters RIAD onto a print bed while a G-code program scrolls beside it.">
 
+I'm Riad. I study computer science at the University of Michigan–Dearborn and spend the rest of my time shipping things: phone apps, prediction models, and lately a firewall that stops AI agents from setting 3D printers on fire.
 
-## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/RI4D.H) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/riad-heydarzade-5949b7281/) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:riadh@umich.edu) 
+I like projects where software touches something physical or has to explain itself. I speak four human languages and a few more that compile.
 
-# 💻 Tech Stack:
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Adobe](https://img.shields.io/badge/adobe-%23FF0000.svg?style=for-the-badge&logo=adobe&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+## On the bed right now
 
+<p align="center">
+  <a href="https://github.com/Ri4dH/GcodeGuard"><img src="assets/card-gcodeguard.svg" width="49%" alt="GcodeGuard: a safety firewall between whatever drives your 3D printer and the printer itself."></a>
+  <a href="https://github.com/Ri4dH/Redrep"><img src="assets/card-redrep.svg" width="49%" alt="Redrep: a free, account-free workout tracker for iPhone. Every session gets a Redline score."></a>
+</p>
+<p align="center">
+  <a href="https://github.com/Ri4dH/WorldCupPredictor"><img src="assets/card-worldcup.svg" width="49%" alt="World Cup Predictor: explainable 2026 match forecasts from a seven-model ensemble on live tournament data."></a>
+  <a href="https://github.com/Ri4dH/4-Bit-Processor"><img src="assets/card-4bit.svg" width="49%" alt="4-Bit Processor: a working CPU built from bare logic gates."></a>
+</p>
+
+## Earlier prints
+
+| | |
+|---|---|
+| [**EcoTrack**](https://github.com/Ri4dH/EcoTrack) | Mobile carbon tracker. React Native and Firebase up front, a Fetch.ai agent doing the CO₂ math behind a FastAPI bridge. |
+| [**TruthVerifier**](https://github.com/Ri4dH/AI-Fact-Checker) | Chrome extension: highlight a claim on any page, get a Gemini-backed verdict with live sources. |
+| [**Meteor Madness**](https://github.com/Ri4dH/Meteor-Madness) | An Asteroids-style arcade shooter in C# and Windows Forms. |
+
+## Toolchain
+
+```text
+languages   C++ · Python · TypeScript · JavaScript · Java · C#
+web + app   Next.js · React Native · FastAPI · Firebase · Tailwind · Prisma
+data        PostgreSQL · MySQL
+tools       Docker · Git · Figma
+learning    operating systems · cloud · system design at scale
+```
+
+## Send a command
+
+Open to collaborating on open-source work and odd software ideas, especially anything with a hardware edge.
+
+[LinkedIn](https://www.linkedin.com/in/riad-heydarzade-5949b7281/) · [Instagram](https://instagram.com/RI4D.H) · [riadh@umich.edu](mailto:riadh@umich.edu)
+
+<sub>Every graphic on this page is a hand-written SVG living in this repo. No widgets, no trackers.</sub>

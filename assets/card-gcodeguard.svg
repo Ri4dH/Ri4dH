@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 220" role="img" aria-label="GcodeGuard: a safety firewall between whatever drives your 3D printer and the printer itself.">
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .m { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .stamp { animation: stamp 7s infinite; }
+    @keyframes stamp { 0%,38% { opacity: 0 } 42%,92% { opacity: 1 } 97%,100% { opacity: 0 } }
+  </style>
+  <rect x="1" y="1" width="598" height="218" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+  <text x="28" y="54" font-size="28" font-weight="700" fill="#e6edf3">GcodeGuard</text>
+  <text x="28" y="88" font-size="15" fill="#9198a1">A safety firewall between whatever</text>
+  <text x="28" y="110" font-size="15" fill="#9198a1">drives your 3D printer (you, a slicer,</text>
+  <text x="28" y="132" font-size="15" fill="#9198a1">an AI agent) and the printer itself.</text>
+  <text class="m" x="28" y="190" font-size="12" fill="#6e7681" letter-spacing="1">PYTHON · OCTOPRINT · KLIPPER · MCP</text>
+
+  <!-- hotend temperature: without vs with -->
+  <rect x="368" y="36" width="204" height="130" rx="8" fill="#010409" stroke="#21262d"/>
+  <path d="M368,84 H572" stroke="#d29922" stroke-width="1.5" stroke-dasharray="5 5"/>
+  <text class="m" x="376" y="76" font-size="10" fill="#d29922">SAFE LIMIT</text>
+  <path d="M378,150 C430,150 440,104 480,104 C510,104 530,70 562,52" pathLength="1" fill="none" stroke="#f85149" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="1 2" stroke-dashoffset="1.05" opacity="0.55">
+    <animate attributeName="stroke-dashoffset" values="1.05;0;0;1.05" keyTimes="0;0.4;0.95;1" dur="7s" repeatCount="indefinite"/>
+  </path>
+  <path d="M378,150 C430,150 440,104 480,104 L562,104" pathLength="1" fill="none" stroke="#3fb950" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="1 2" stroke-dashoffset="1.05">
+    <animate attributeName="stroke-dashoffset" values="1.05;0;0;1.05" keyTimes="0;0.4;0.95;1" dur="7s" repeatCount="indefinite"/>
+  </path>
+  <text class="m" x="368" y="190" font-size="12" fill="#e6edf3">M104 S265 <tspan class="stamp" fill="#f85149" font-weight="700">✕ BLOCKED</tspan></text>
+</svg>

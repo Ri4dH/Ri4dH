@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" role="img" aria-labelledby="t d">
+  <title id="t">Riad H</title>
+  <desc id="d">A 3D printer nozzle traces the letters RIAD onto a print bed while a G-code program scrolls beside it.</desc>
+  <defs>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#1b222c" stroke-width="1"/>
+    </pattern>
+    <path id="tool" d="M70,260 L70,110 L140,110 Q170,110 170,147 Q170,185 140,185 L70,185 M125,185 L170,260 M215,110 L275,110 M245,110 L245,260 M215,260 L275,260 M320,260 L370,110 L420,260 M340,200 L400,200 M465,260 L465,110 L515,110 Q565,110 565,185 Q565,260 515,260 L465,260"/>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+      .ln { font-size: 16px; fill: #e6edf3; opacity: 0; animation-duration: 14s; animation-iteration-count: infinite; }
+      .c { fill: #7d8590; }
+      .k { fill: #ff7a59; }
+      .l1 { animation-name: l1 } .l2 { animation-name: l2 } .l3 { animation-name: l3 } .l4 { animation-name: l4 }
+      .l5 { animation-name: l5 } .l6 { animation-name: l6 } .l7 { animation-name: l7 }
+      @keyframes l1 { 0%,1%   { opacity: 0 } 3%,93%  { opacity: 1 } 97%,100% { opacity: 0 } }
+      @keyframes l2 { 0%,6%   { opacity: 0 } 8%,93%  { opacity: 1 } 97%,100% { opacity: 0 } }
+      @keyframes l3 { 0%,12%  { opacity: 0 } 14%,93% { opacity: 1 } 97%,100% { opacity: 0 } }
+      @keyframes l4 { 0%,20%  { opacity: 0 } 22%,93% { opacity: 1 } 97%,100% { opacity: 0 } }
+      @keyframes l5 { 0%,28%  { opacity: 0 } 30%,93% { opacity: 1 } 97%,100% { opacity: 0 } }
+      @keyframes l6 { 0%,36%  { opacity: 0 } 38%,93% { opacity: 1 } 97%,100% { opacity: 0 } }
+      @keyframes l7 { 0%,41%  { opacity: 0 } 43%,93% { opacity: 1 } 97%,100% { opacity: 0 } }
+      .cur { animation: blink 1s steps(1) infinite; }
+      @keyframes blink { 0% { opacity: 1 } 50% { opacity: 0 } 100% { opacity: 0 } }
+    </style>
+  </defs>
+
+  <rect x="1" y="1" width="1198" height="378" rx="18" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+
+  <!-- print bed -->
+  <rect x="40" y="50" width="580" height="270" rx="10" fill="url(#grid)" stroke="#21262d"/>
+  <text x="48" y="342" font-size="12" fill="#484f58">X0</text>
+  <text x="586" y="342" font-size="12" fill="#484f58">X220</text>
+
+  <!-- ghost of the toolpath -->
+  <use href="#tool" fill="none" stroke="#161b22" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- extruded line -->
+  <path d="M70,260 L70,110 L140,110 Q170,110 170,147 Q170,185 140,185 L70,185 M125,185 L170,260 M215,110 L275,110 M245,110 L245,260 M215,260 L275,260 M320,260 L370,110 L420,260 M340,200 L400,200 M465,260 L465,110 L515,110 Q565,110 565,185 Q565,260 515,260 L465,260" pathLength="1" fill="none" stroke="#e6edf3" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 1.2" stroke-dashoffset="1.02">
+    <animate attributeName="stroke-dashoffset" values="1.02;0;0;1.02" keyTimes="0;0.4;0.97;1" dur="14s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.93;0.97;1" dur="14s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- still-hot segment right behind the nozzle -->
+  <path d="M70,260 L70,110 L140,110 Q170,110 170,147 Q170,185 140,185 L70,185 M125,185 L170,260 M215,110 L275,110 M245,110 L245,260 M215,260 L275,260 M320,260 L370,110 L420,260 M340,200 L400,200 M465,260 L465,110 L515,110 Q565,110 565,185 Q565,260 515,260 L465,260" pathLength="1" fill="none" stroke="#ff4d2e" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.035 2" stroke-dashoffset="0.06" filter="url(#glow)">
+    <animate attributeName="stroke-dashoffset" values="0.06;-0.965;-0.965" keyTimes="0;0.4;1" dur="14s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.4;0.42;1" dur="14s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- nozzle -->
+  <g>
+    <animateMotion dur="14s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.4;1">
+      <mpath href="#tool"/>
+    </animateMotion>
+    <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.41;0.45;0.99;1" dur="14s" repeatCount="indefinite"/>
+    <rect x="-17" y="-52" width="34" height="24" rx="4" fill="#8b949e"/>
+    <rect x="-11" y="-28" width="22" height="8" fill="#6e7681"/>
+    <path d="M-11,-20 L11,-20 L3,-5 L-3,-5 Z" fill="#d29922"/>
+    <circle r="4" fill="#ff4d2e" filter="url(#glow)"/>
+  </g>
+
+  <!-- g-code readout -->
+  <text x="672" y="72" font-size="13" fill="#484f58">riad-h.gcode</text>
+  <path d="M672 84H1160" stroke="#21262d"/>
+  <text class="ln l1" x="672" y="118"><tspan class="k">G28</tspan>            <tspan class="c" x="832">; home all axes</tspan></text>
+  <text class="ln l2" x="672" y="148"><tspan class="k">M104</tspan> S210      <tspan class="c" x="832">; warm up</tspan></text>
+  <text class="ln l3" x="672" y="178"><tspan class="k">G1</tspan> X70 E0.4    <tspan class="c" x="832">; build: apps people use</tspan></text>
+  <text class="ln l4" x="672" y="208"><tspan class="k">G1</tspan> X245 E1.1   <tspan class="c" x="832">; build: models that explain</tspan></text>
+  <text class="ln l5" x="672" y="238"><tspan class="k">G1</tspan> X420 E1.9   <tspan class="c" x="832">; build: guardrails for machines</tspan></text>
+  <text class="ln l6" x="672" y="268"><tspan class="k">M117</tspan> <tspan fill="#3fb950">CS @ UMich-Dearborn</tspan></text>
+  <text class="ln l7" x="672" y="298"><tspan class="k">M400</tspan>           <tspan class="c" x="832">; wait for idle (never)</tspan><tspan class="cur" fill="#e6edf3"> ▍</tspan></text>
+
+  <!-- progress -->
+  <rect x="672" y="322" width="488" height="6" rx="3" fill="#21262d"/>
+  <rect x="672" y="322" width="0" height="6" rx="3" fill="#ff4d2e">
+    <animate attributeName="width" values="0;488;488;0;0" keyTimes="0;0.4;0.93;0.97;1" dur="14s" repeatCount="indefinite"/>
+  </rect>
+</svg>
